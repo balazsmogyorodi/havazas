@@ -7,10 +7,11 @@ main {
     margin: auto;
   padding: 10px;
 margin-top: -10px;
+margin-bottom: -20px;
 
 background-color: white;
       display: grid;
-      grid-template-columns: 1fr 3fr 2fr;
+      grid-template-columns: 1fr 3fr 1.5fr;
     grid-template-areas:
         'h h h'
         'n a as'
@@ -23,7 +24,7 @@ header {
     grid-area: h;
     text-align: center;
     background-image: url(kepek/fejlec.jpg);
-    margin-top: -8px;
+    margin-top: -10px;
     margin-left: -10px;
     margin-right: -10px;
     height: 135px;
@@ -65,8 +66,51 @@ ul {
 
 article {
     grid-area: a;
+    
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 80px;
+
+
+}
+
+.elso {
+    width: fit-content;
+    border: 1px solid gray;
+    margin-left: 10px;
+    transform: rotate(-7deg);
+    background-color: white;
+    padding-bottom: 40px;
+
+}
+
+.masodik {
+    width: 100%;
+    border: 1px solid gray; 
+    transform: rotate(7deg);
+    background-color: white;
+
+}
+
+
+img {
+    width: 60%;
+    padding: 10px;
+    margin: auto;
+    border: 10px;
+}
+
+.tomb {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.tomb2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 100px;
+
+
 
 }
 
@@ -80,7 +124,7 @@ aside {
 }
 
 h2 {
-    margin-top: 60px;
+    margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
     
@@ -97,7 +141,7 @@ footer {
     grid-area: f;
     text-align: center;
     background-color: aqua;
-    margin-bottom: -8px;
+    margin-bottom: -10px;
     margin-left: -10px;
     margin-right: -10px;
     height: 45px;
